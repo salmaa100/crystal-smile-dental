@@ -191,7 +191,7 @@ export default function Home() {
             {[
               {
                 name: "Sarah Johnson",
-                text: "The level of care and attention to detail at Crystal Smile is exceptional. I couldn&apos;t be happier with my results!",
+                text: "The level of care and attention to detail at Crystal Smile is exceptional. I could not be happier with my results!",
                 role: "Executive"
               },
               {
@@ -201,7 +201,7 @@ export default function Home() {
               },
               {
                 name: "Emma Davis",
-                text: "From the moment you walk in, you know you're in good hands. The results exceeded my expectations!",
+                text: "From the moment you walk in, you know you are in good hands. The results exceeded my expectations!",
                 role: "Artist"
               }
             ].map((testimonial, index) => (

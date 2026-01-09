@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Top-Rated Dentist in Cairo Rehab | Crystal Smile Dental Clinic",
   
   // 2. The Description: Use keywords like "emergency," "family," or "implants."
-  description: "Crystal Smile offers premium dental care in Cairo Rehab Gateway Mall. From Digital Smile Design and Dental Implants to painless children's dentistry. Book your appointment today for a healthy, confident smile.",
+  description: "Crystal Smile offers premium dental care in Cairo Rehab Gateway Mall. From Digital Smile Design and Dental Implants to painless childrens dentistry. Book your appointment today for a healthy, confident smile.",
   
   // 3. Open Graph: This makes your site look professional when shared on Facebook/WhatsApp
   openGraph: {

@@ -85,8 +85,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <RiPhoneLine className="w-5 h-5 text-primary-gold" />
-                <a href="tel:+1234567890" className="font-ui text-sm text-white hover:text-primary-gold transition-colors">
-                  (123) 456-7890
+                <a href="tel:+20 10 92797153" className="font-ui text-sm text-white hover:text-primary-gold transition-colors">
+                  010 92797153
                 </a>
               </li>
               <li className="flex items-center space-x-3">

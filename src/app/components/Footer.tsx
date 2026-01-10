@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiInstagramLine, RiFacebookLine, RiTwitterXLine, RiGithubLine } from 'react-icons/ri';
+import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiInstagramLine, RiFacebookLine } from 'react-icons/ri';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();

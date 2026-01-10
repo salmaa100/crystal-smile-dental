@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiTimeLine, RiInstagramLine, RiFacebookLine, RiTwitterXLine } from 'react-icons/ri';
+import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiTimeLine, RiInstagramLine, RiFacebookLine} from 'react-icons/ri';
 
 const businessHours = [
   { day: "Monday", hours: "9:00 AM - 6:00 PM" },
@@ -260,14 +260,6 @@ export default function Contact() {
                   >
                     <RiFacebookLine className="w-8 h-8" />
                   </a>
-                  <a
-                    href="https://twitter.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary-gold hover:opacity-80 transition-opacity"
-                  >
-                    <RiTwitterXLine className="w-8 h-8" />
-                  </a>
                 </div>
               </motion.div>
             </div>
@@ -281,7 +273,7 @@ export default function Contact() {
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl text-white mb-4">Find Us</h2>
             <p className="font-body text-white">
-              Located in the heart of Beverly Hills, our clinic offers convenient access and valet parking.
+              Located in the heart of Rehab, Gateway Mall, our clinic offers convenient access and valet parking.
             </p>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">

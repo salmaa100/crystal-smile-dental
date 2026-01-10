@@ -158,10 +158,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: "15+", label: "Years of Excellence" },
-              { number: "10k+", label: "Smiles Transformed" },
-              { number: "50+", label: "Awards Won" },
-              { number: "100%", label: "Patient Satisfaction" }
+              { number: "10+", label: "Specialized Doctors" },
+              { number: "Latest", label: "Modern Technology" },
+              { number: "Painless", label: "Patient Experience" },
+              { number: "100%", label: "Satisfaction Rate" }
             ].map((stat, index) => (
               <motion.div
                 key={index}

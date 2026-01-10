@@ -80,7 +80,7 @@ export default function Footer() {
               <li className="flex items-center space-x-3">
                 <RiMapPin2Line className="w-5 h-5 text-primary-gold" />
                 <span className="font-ui text-sm text-white">
-                  Gateway Mall, Rehab City, Cairo.
+                Gateway Mall, Rehab City, Second New Cairo, Cairo Governorate 4750061
                 </span>
               </li>
               <li className="flex items-center space-x-3">

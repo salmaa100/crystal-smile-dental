@@ -29,23 +29,23 @@ const values = [
 
 const team = [
   {
-    name: "Dr. Sarah Mitchell",
-    role: "Lead Cosmetic Dentist",
-    description: "With over 15 years of experience in cosmetic dentistry, Dr. Mitchell leads our team with expertise in smile transformations.",
+    name: "---",
+    role: "---",
+    description: "---",
     image: "/assets/images/team/dr-mitchell.jpg",
     credentials: "DDS, AAACD"
   },
   {
-    name: "Dr. James Chen",
-    role: "Implant Specialist",
-    description: "A renowned expert in dental implants and reconstructive dentistry with numerous international certifications.",
+    name: "---",
+    role: "---",
+    description: "---",
     image: "/assets/images/team/dr-chen.jpg",
     credentials: "DMD, PhD"
   },
   {
-    name: "Dr. Emily Parker",
-    role: "Orthodontist",
-    description: "Specializing in creating beautiful smiles through innovative orthodontic treatments and Invisalign.",
+    name: "---",
+    role: "---",
+    description: "--",
     image: "/assets/images/team/dr-parker.jpg",
     credentials: "DDS, MS"
   }
@@ -96,7 +96,7 @@ export default function About() {
               <h2 className="font-heading text-3xl lg:text-4xl text-black mb-6">Our Legacy of Excellence</h2>
               <div className="space-y-6">
                 <p className="font-body text-black">
-                  Founded in 2008, Crystal Smile Dental Clinic has established itself as Beverly Hills&apos; premier destination for luxury dental care. Our journey began with a vision to transform the dental experience into something extraordinary.
+                  Founded in 2024, Crystal Smile Dental Clinic has established itself as Rehab&apos; premier destination for luxury dental care. Our journey began with a vision to transform the dental experience into something extraordinary.
                 </p>
                 <p className="font-body text-black">
                   Over the years, we&apos;ve consistently invested in cutting-edge technology and assembled a team of world-class professionals, setting new standards in dental excellence.
@@ -275,7 +275,7 @@ export default function About() {
             Experience the Crystal Smile Difference
           </h2>
           <p className="font-body text-lg text-black mb-8 max-w-2xl mx-auto">
-            Join us for a consultation and discover why we&apos;re Beverly Hills&apos; premier choice for luxury dental care.
+            Join us for a consultation and discover why we&apos;re Crystal Smile; premier choice for luxury dental care.
           </p>
           <Link 
             href="/appointment"

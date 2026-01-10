@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="flex space-x-4">
               <motion.a
                 whileHover={{ y: -2 }}
-                href="https://instagram.com"
+                href="https://www.instagram.com/crystalsmile.dentalclinic?igsh=cmQ0Nmd3aG9nOHQx"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-gold hover:opacity-80 transition-opacity"
@@ -31,30 +31,12 @@ export default function Footer() {
               </motion.a>
               <motion.a
                 whileHover={{ y: -2 }}
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/19VRjVe6CT/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-gold hover:opacity-80 transition-opacity"
               >
                 <RiFacebookLine className="w-6 h-6" />
-              </motion.a>
-              <motion.a
-                whileHover={{ y: -2 }}
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary-gold hover:opacity-80 transition-opacity"
-              >
-                <RiTwitterXLine className="w-6 h-6" />
-              </motion.a>
-              <motion.a
-                whileHover={{ y: -2 }}
-                href="https://github.com/Ruhanpaco/dental-clinic"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary-gold hover:opacity-80 transition-opacity"
-              >
-                <RiGithubLine className="w-6 h-6" />
               </motion.a>
             </div>
           </div>

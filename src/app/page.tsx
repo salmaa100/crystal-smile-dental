@@ -222,7 +222,7 @@ export default function Home() {
     {/* Google Reviews Link Button */}
     <div className="text-center mt-12">
       <a 
-        href="https://google.com" // Replace with your actual Google Business link later
+        href="https://www.google.com/search?newwindow=1&sca_esv=eebed2998b575f61&sxsrf=ANbL-n4uz3DNquoyzkoz2ZbMwyrpODoaSQ:1767954661078&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOUM2cQUhTVfr8eD9q00kwMNVIumY9HcuLfbRlvmJEIKVdumgcvfdB-zQglAVR88kpNBf9fzQQZNP4OJVmnZkhM7WvCzWZbumRDB09c--eIAd1St_rn-8s5SsOqblAs2pumA1jeA%3D&q=Crystal+Smile+Rehab+Dental+Clinic+Reviews&sa=X&ved=2ahUKEwiJwrWsoP6RAxUqKvsDHX2HBNwQ0bkNegQIIRAE&biw=1280&bih=631&dpr=1.5&aic=0"
         target="_blank" 
         className="inline-block px-8 py-3 bg-black text-white font-heading rounded-md hover:bg-primary-gold transition-colors"
       >

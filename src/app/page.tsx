@@ -179,60 +179,58 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-heading text-4xl text-black mb-4">Patient Testimonials</h2>
-            <p className="font-body text-lg text-black max-w-2xl mx-auto">
-              Hear what our valued patients have to say about their experience
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Selim Selim",
-                text: "Amazing clinic with a very professional and friendly staff. It is clean and modern and they have a specialist in every dental field. They’re also available 24/7 for emergencies! Highly recommended!"
-              },
-              {
-                name: "Salma Hassan",
-                text: "The place is very clean, modern, and equipped with the latest dental technology. I have visited the clinic three times and had several different treatments done, and every visit was a great experience. The doctor is very professional, patient, and always explains each step clearly. The staff are friendly and welcoming, and the clinic maintains a high standard of hygiene. I truly appreciate the quality of care I received and highly recommend this clinic to anyone looking for excellent dental service in a clean and professional environment."
-              },
-              {
-                name: "Seif Adel",
-                text: "I did teeth cleaning and whitening here, and honestly it was great! Everyone was super nice and the doctor was really gentle. My teeth look so clean and white now! The place is clean and comfortable totally recommend it"
-              }
-      {
-                name: "Selim Selim",
-                text: "Amazing clinic with a very professional and friendly staff. It is clean and modern and they have a specialist in every dental field. They’re also available 24/7 for emergencies! Highly recommended!"
-              },
-              {
-                name: "Salma Hassan",
-                text: "The place is very clean, modern, and equipped with the latest dental technology. I have visited the clinic three times and had several different treatments done, and every visit was a great experience. The doctor is very professional, patient, and always explains each step clearly. The staff are friendly and welcoming, and the clinic maintains a high standard of hygiene. I truly appreciate the quality of care I received and highly recommend this clinic to anyone looking for excellent dental service in a clean and professional environment."
-              },
-              {
-                name: "Seif Adel",
-                text: "I did teeth cleaning and whitening here, and honestly it was great! Everyone was super nice and the doctor was really gentle. My teeth look so clean and white now! The place is clean and comfortable totally recommend it"
-              }
-            ].map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-8 rounded-lg border border-primary-gold"
-              >
-                <div className="text-primary-gold mb-6">★★★★★</div>
-                <p className="text-lg font-body text-black mb-4">
-                  &ldquo;{testimonial.text}&rdquo;
-                </p>
-                <div>
-                  <div className="font-heading text-lg text-black">{testimonial.name}</div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="font-heading text-4xl text-black mb-4">Patient Testimonials</h2>
+      <p className="font-body text-lg text-black max-w-2xl mx-auto">
+        Hear what our valued patients have to say about their experience at Crystal Smile.
+      </p>
+    </div>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          name: "Selim Selim",
+          text: "Amazing clinic with a very professional and friendly staff. It is clean and modern and they have a specialist in every dental field. Highly recommended!"
+        },
+        {
+          name: "Salma Hassan",
+          text: "The place is very clean and equipped with the latest technology. Every visit was a great experience. The doctor is professional and explains each step clearly."
+        },
+        {
+          name: "Seif Adel",
+          text: "I did teeth cleaning and whitening here, and honestly it was great! Everyone was super nice and my teeth look so clean and white now!"
+        }
+      ].map((testimonial, index) => (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+          className="bg-white p-8 rounded-lg border border-primary-gold"
+        >
+          <div className="text-primary-gold mb-6">★★★★★</div>
+          <p className="text-lg font-body text-black mb-4 italic">
+            &ldquo;{testimonial.text}&rdquo;
+          </p>
+          <div className="font-heading text-lg text-black">{testimonial.name}</div>
+        </motion.div>
+      ))}
+    </div>
+
+    {/* Google Reviews Link Button */}
+    <div className="text-center mt-12">
+      <a 
+        href="https://google.com" // Replace with your actual Google Business link later
+        target="_blank" 
+        className="inline-block px-8 py-3 bg-black text-white font-heading rounded-md hover:bg-primary-gold transition-colors"
+      >
+        View More Google Reviews
+      </a>
+    </div>
+  </div>
+</section>
 
       {/* CTA Section */}
       <section className="relative py-20 bg-black">

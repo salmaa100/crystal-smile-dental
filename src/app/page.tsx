@@ -215,7 +215,6 @@ export default function Home() {
                 </p>
                 <div>
                   <div className="font-heading text-lg text-black">{testimonial.name}</div>
-                  <div className="font-ui text-sm text-black">{testimonial.role}</div>
                 </div>
               </motion.div>
             ))}

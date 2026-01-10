@@ -278,7 +278,7 @@ export default function Contact() {
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7153676817196!2d-118.40034168478258!3d34.0736498808061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b93cca9c7ab1%3A0xe2ce30e735620d15!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1635000000000!5m2!1sen!2sus"
+              src="https://www.google.com/maps/place/Crystal+Smile+Rehab+Dental+Clinic/@30.0652295,31.4776044,17z/data=!3m1!4b1!4m6!3m5!1s0x145819f4c49bc73f:0xf42578ff75cf6ae5!8m2!3d30.0652295!4d31.4801793!16s%2Fg%2F11x5sk8mlf?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D"
               width="100%"
               height="400"
               style={{ border: 0 }}

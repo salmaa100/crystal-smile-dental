@@ -122,16 +122,6 @@ export default function Footer() {
           <p className="text-center text-sm font-ui text-white">
             © {currentYear} Crystal Smile Dental Clinic. All rights reserved.
           </p>
-          <p className="text-center text-sm font-ui text-white mt-2">
-            Made with ❤️ by <a 
-              href="https://www.ruhanpacolli.online/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-primary-gold hover:opacity-80 transition-opacity"
-            >
-              Ruhan Pacolli
-            </a>
-          </p>
           <p className="text-center text-sm font-ui text-white/80 mt-1">
             <a 
               href="https://dental-clinic-ivory.vercel.app/" 
@@ -139,7 +129,6 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-primary-gold hover:opacity-80 transition-opacity"
             >
-              View Live Demo
             </a>
           </p>
         </div>

@@ -201,6 +201,18 @@ export default function Home() {
                 name: "Seif Adel",
                 text: "I did teeth cleaning and whitening here, and honestly it was great! Everyone was super nice and the doctor was really gentle. My teeth look so clean and white now! The place is clean and comfortable totally recommend it"
               }
+      {
+                name: "Selim Selim",
+                text: "Amazing clinic with a very professional and friendly staff. It is clean and modern and they have a specialist in every dental field. They’re also available 24/7 for emergencies! Highly recommended!"
+              },
+              {
+                name: "Salma Hassan",
+                text: "The place is very clean, modern, and equipped with the latest dental technology. I have visited the clinic three times and had several different treatments done, and every visit was a great experience. The doctor is very professional, patient, and always explains each step clearly. The staff are friendly and welcoming, and the clinic maintains a high standard of hygiene. I truly appreciate the quality of care I received and highly recommend this clinic to anyone looking for excellent dental service in a clean and professional environment."
+              },
+              {
+                name: "Seif Adel",
+                text: "I did teeth cleaning and whitening here, and honestly it was great! Everyone was super nice and the doctor was really gentle. My teeth look so clean and white now! The place is clean and comfortable totally recommend it"
+              }
             ].map((testimonial, index) => (
               <motion.div
                 key={index}

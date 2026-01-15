@@ -52,7 +52,7 @@ export default function Appointment() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/assets/images/booking-hero.jpg"
-            alt="Book Appointment at WhitePearl Dental"
+            alt="Book Appointment at Crystal Smile Dental"
             fill
             className="object-cover opacity-30"
             priority

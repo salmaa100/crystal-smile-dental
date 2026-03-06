@@ -3,19 +3,52 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Updated to your Brand Palette */
+  --background: #F8FAFB;     /* Very light cool gray/blue for a clean clinic look */
+  --foreground: #1F3665;     /* Your Brand Navy (Main Text) */
+  
+  --brand-navy: #1F3665;
+  --brand-teal: #3297A8;
+  --brand-mint: #A4D9D0;
+  --brand-sage: #B7DDC9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Dark mode uses a deep version of your Navy */
+    --background: #0D1629; 
+    --foreground: #E5F4F1;   /* Soft mint-white for readability */
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Updating font to a cleaner sans-serif that fits the 'Crystal' vibe */
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  /* Custom Button Style using your Teal */
+  .btn-primary {
+    @apply bg-[#3297A8] text-white px-6 py-2 rounded-md transition-all duration-300 hover:bg-[#1F3665] shadow-sm;
+  }
+
+  /* Soft Section Backgrounds */
+  .section-alt {
+    @apply bg-[#B7DDC9] bg-opacity-10;
+  }
+
+  /* Headings automatically use Navy */
+  h1, h2, h3, h4 {
+    @apply text-[#1F3665] font-bold tracking-tight;
+  }
+}
+
+/* Custom selection color to match your brand */
+::selection {
+  background-color: var(--brand-mint);
+  color: var(--brand-navy);
 }

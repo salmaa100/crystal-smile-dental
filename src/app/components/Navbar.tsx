@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { RiMenu4Line, RiCloseLine } from 'react-icons/ri';
@@ -20,7 +21,7 @@ export default function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="w-full bg-white border-b border-primary-gold/10"
+      className="w-full bg-white border-b border-brand-teal/20"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
@@ -77,9 +78,9 @@ export default function Navbar() {
               className="p-2 rounded-full hover:bg-primary-gold/10 transition-all duration-300"
             >
               {isOpen ? (
-                <RiCloseLine className="w-7 h-7 text-primary-gold" />
+                <RiCloseLine className="w-7 h-7 text-brand-teal" />
               ) : (
-                <RiMenu4Line className="w-7 h-7 text-primary-gold" />
+                <RiMenu4Line className="w-7 h-7 text-brand-teal" />
               )}
             </motion.button>
           </div>
@@ -93,7 +94,7 @@ export default function Navbar() {
         transition={{ duration: 0.3 }}
         className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}
       >
-        <div className="px-4 pt-2 pb-6 bg-white border-t border-primary-gold/10">
+        <div className="px-4 pt-2 pb-6 bg-white border-t border-brand-teal/20">
           {navLinks.map((link) => (
             <motion.div
               key={link.href}

@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-white">
-        {/* Background Image with Overlay */}
+      <section className="relative min-h-screen bg-brand-navy">
+        {/* Background Image with Navy Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/assets/images/desk.png"
@@ -18,7 +18,8 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/30" />
+          {/* Increased overlay density to 50% navy for better text readability */}
+          <div className="absolute inset-0 bg-brand-navy/50" />
         </div>
 
         {/* Hero Content */}
@@ -51,13 +52,13 @@ export default function Home() {
             >
               <Link 
                 href="/appointment"
-                className="inline-block bg-primary-gold hover:bg-primary-gold text-black font-ui text-sm tracking-wide px-8 py-4 rounded-full transition-all duration-300"
+                className="inline-block bg-brand-teal hover:bg-white hover:text-brand-navy text-white font-ui text-sm tracking-wide px-8 py-4 rounded-full transition-all duration-300"
               >
                 Book Your Visit
               </Link>
               <Link 
                 href="/services"
-                className="inline-block bg-white hover:bg-white text-black font-ui text-sm tracking-wide px-8 py-4 rounded-full transition-all duration-300"
+                className="inline-block bg-white/10 backdrop-blur-sm border border-white text-white hover:bg-white hover:text-brand-navy font-ui text-sm tracking-wide px-8 py-4 rounded-full transition-all duration-300"
               >
                 Explore Services
               </Link>
@@ -71,23 +72,23 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-heading text-4xl text-black mb-6">Welcome to Crystal Smile Dental Clinic</h2>
-              <p className="font-body text-lg text-black mb-8 leading-relaxed">
+              <h2 className="font-heading text-4xl text-brand-navy mb-6">Welcome to Crystal Smile Dental Clinic</h2>
+              <p className="font-body text-lg text-gray-700 mb-8 leading-relaxed">
                 At Crystal Smile, we provide premium dental care at the heart of Rehab City. Our Gateway Mall facility combines luxury with cutting-edge technology to provide an unparalleled experience for the whole family.
               </p>
               <Link 
                 href="/about"
-                className="inline-block border-2 border-primary-gold text-primary-gold hover:bg-primary-gold hover:text-white font-ui text-sm tracking-wide px-8 py-3 transition-all duration-300"
+                className="inline-block border-2 border-brand-teal text-brand-teal hover:bg-brand-teal hover:text-white font-ui text-sm tracking-wide px-8 py-3 transition-all duration-300"
               >
                 Learn More About Us
               </Link>
             </div>
-            <div className="relative h-[600px]">
+            <div className="relative h-[500px]">
               <Image
                 src="/assets/images/edited.png"
                 alt="Modern Dental Treatment Clinic in Cairo Rehab"
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover rounded-lg shadow-2xl"
               />
             </div>
           </div>
@@ -95,16 +96,15 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-heading text-4xl text-black mb-4">Our Premium Services</h2>
-            <p className="font-body text-lg text-black max-w-2xl mx-auto">
+            <h2 className="font-heading text-4xl text-brand-navy mb-4">Our Premium Services</h2>
+            <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
               Experience comprehensive dental care with our range of specialized services
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Service Cards */}
             {[
               {
                 title: "Cosmetic Dentistry",
@@ -127,7 +127,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-primary-gold"
+                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-100"
               >
                 <div className="relative h-64">
                   <Image
@@ -138,11 +138,11 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-heading text-xl text-black mb-2">{service.title}</h3>
-                  <p className="font-body text-black mb-4">{service.description}</p>
+                  <h3 className="font-heading text-xl text-brand-navy mb-2">{service.title}</h3>
+                  <p className="font-body text-gray-600 mb-4">{service.description}</p>
                   <Link 
                     href="/services"
-                    className="text-primary-gold hover:text-primary-gold font-ui text-sm tracking-wide transition-colors duration-300"
+                    className="text-brand-teal hover:text-brand-navy font-ui text-sm font-bold tracking-wide transition-colors duration-300"
                   >
                     Learn More →
                   </Link>
@@ -153,8 +153,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-brand-navy text-brand-mint">
+      {/* Stats Section - Updated to Teal numbers on Navy */}
+      <section className="py-20 bg-brand-navy text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -170,8 +170,8 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="font-heading text-4xl text-primary-gold mb-2">{stat.number}</div>
-                <div className="font-ui text-sm tracking-wide text-white">{stat.label}</div>
+                <div className="font-heading text-4xl text-brand-teal mb-2">{stat.number}</div>
+                <div className="font-ui text-sm tracking-wide text-gray-300">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -179,73 +179,76 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-<section className="py-20 bg-white">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-16">
-      <h2 className="font-heading text-4xl text-black mb-4">Patient Testimonials</h2>
-      <p className="font-body text-lg text-black max-w-2xl mx-auto">
-        Hear what our valued patients have to say about their experience at Crystal Smile.
-      </p>
-    </div>
-    
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {[
-        {
-          name: "Selim Selim",
-          text: "Amazing clinic with a very professional and friendly staff. It is clean and modern and they have a specialist in every dental field. They’re also available 24/7 for emergencies! Highly recommended!"
-        },
-        {
-          name: "Salma Hassan",
-          text: "The place is very clean, modern, and equipped with the latest dental technology. I have visited the clinic three times and had several different treatments done, and every visit was a great experience. The doctor is very professional, patient, and always explains each step clearly. The staff are friendly and welcoming, and the clinic maintains a high standard of hygiene. I truly appreciate the quality of care I received and highly recommend this clinic to anyone looking for excellent dental service in a clean and professional environment."
-        },
-        {
-          name: "Seif Adel",
-          text: "I did teeth cleaning and whitening here, and honestly it was great! Everyone was super nice and the doctor was really gentle. My teeth look so clean and white now! The place is clean and comfortable totally recommend it"
-        }
-      ].map((testimonial, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: index * 0.1 }}
-          className="bg-white p-8 rounded-lg border border-primary-gold"
-        >
-          <div className="text-primary-gold mb-6">★★★★★</div>
-          <p className="text-lg font-body text-black mb-4 italic">
-            &ldquo;{testimonial.text}&rdquo;
-          </p>
-          <div className="font-heading text-lg text-black">{testimonial.name}</div>
-        </motion.div>
-      ))}
-    </div>
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-4xl text-brand-navy mb-4">Patient Testimonials</h2>
+            <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
+              Hear what our valued patients have to say about their experience at Crystal Smile.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Selim Selim",
+                text: "Amazing clinic with a very professional and friendly staff. It is clean and modern and they have a specialist in every dental field."
+              },
+              {
+                name: "Salma Hassan",
+                text: "The place is very clean, modern, and equipped with the latest dental technology. The doctor is very professional and patient."
+              },
+              {
+                name: "Seif Adel",
+                text: "I did teeth cleaning and whitening here, and honestly it was great! Everyone was super nice and my teeth look so white now!"
+              }
+            ].map((testimonial, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-gray-50 p-8 rounded-lg border border-gray-100"
+              >
+                <div className="text-brand-teal mb-6">★★★★★</div>
+                <p className="text-lg font-body text-gray-700 mb-4 italic">
+                  &ldquo;{testimonial.text}&rdquo;
+                </p>
+                <div className="font-heading text-lg text-brand-navy">{testimonial.name}</div>
+              </motion.div>
+            ))}
+          </div>
 
-    {/* Google Reviews Link Button */}
-    <div className="text-center mt-12">
-      <a 
-        href="https://www.google.com/search?newwindow=1&sca_esv=eebed2998b575f61&sxsrf=ANbL-n4uz3DNquoyzkoz2ZbMwyrpODoaSQ:1767954661078&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOUM2cQUhTVfr8eD9q00kwMNVIumY9HcuLfbRlvmJEIKVdumgcvfdB-zQglAVR88kpNBf9fzQQZNP4OJVmnZkhM7WvCzWZbumRDB09c--eIAd1St_rn-8s5SsOqblAs2pumA1jeA%3D&q=Crystal+Smile+Rehab+Dental+Clinic+Reviews&sa=X&ved=2ahUKEwiJwrWsoP6RAxUqKvsDHX2HBNwQ0bkNegQIIRAE&biw=1280&bih=631&dpr=1.5&aic=0"
-        target="_blank" 
-        className="inline-block px-8 py-3 bg-brand-teal text-white font-heading rounded-md hover:bg-brand-navy transition-colors"      >
-        View More Google Reviews
-      </a>
-    </div>
-  </div>
-</section>
+          <div className="text-center mt-12">
+            <a 
+              href="https://www.google.com/search?q=Crystal+Smile+Rehab+Dental+Clinic+Reviews"
+              target="_blank" 
+              className="inline-block px-8 py-3 bg-brand-teal text-white font-heading rounded-md hover:bg-brand-navy transition-colors"      
+            >
+              View More Google Reviews
+            </a>
+          </div>
+        </div>
+      </section>
 
-      {/* CTA Section */}
-      <section className="relative py-20 bg-brand-navy border-t border-brand-teal/20">
+      {/* CTA Section - Swapped Gold for Teal */}
+      <section className="relative py-24 bg-brand-navy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading text-4xl text-white mb-6">Ready to Transform Your Smile?</h2>
-          <p className="font-body text-lg text-white mb-8 max-w-2xl mx-auto">
+          <p className="font-body text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
             Schedule your consultation today and take the first step towards your dream smile.
           </p>
           <Link 
             href="/appointment"
-            className="inline-block bg-primary-gold hover:bg-primary-gold text-black font-ui text-sm tracking-wide px-12 py-4 rounded-full transition-all duration-300"
+            className="inline-block bg-brand-teal hover:bg-white hover:text-brand-navy text-white font-ui text-sm font-bold tracking-wide px-12 py-4 rounded-full transition-all duration-300"
           >
             Book Your Consultation
           </Link>
         </div>
       </section>
+    </main>
+  );
+}
     </main>
   );
 }

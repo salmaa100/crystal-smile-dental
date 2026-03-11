@@ -17,15 +17,14 @@ export default {
           mint: '#A4D9D0',
           sage: '#B7DDC9',
         },
-        // Keep these but update the 'gold' to your 'teal' if you want a quick swap
-        primary: {
-          DEFAULT: '#1F3665', // Changed from Black to Navy
-          gold: '#3297A8',    // Changed from Gold to Teal
+       primary: {
+          DEFAULT: '#1F3665', // Changed from black to Navy
+          gold: '#3297A8',
           white: '#FFFFFF',
         },
         background: {
-          light: '#F8FAFB',   // Your new clean clinic background
-          dark: '#0D1629',
+          light: '#F8FAFB',
+          dark: '#1F3665',    // Changed from #121212 to Navy
         },
         text: {
           light: '#1F3665',

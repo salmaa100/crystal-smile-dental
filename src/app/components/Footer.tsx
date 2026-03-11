@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-black">
+    <footer className="bg-brand-navy">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Clinic Info */}
@@ -16,7 +16,7 @@ export default function Footer() {
             <h3 className="font-heading text-2xl text-white">
               Crystal Smile
             </h3>
-            <p className="font-body text-sm text-white">
+            <p className="font-body text-sm text-brand-mint/90">
               Luxury dental care for those who appreciate excellence in dental health and aesthetics.
             </p>
             <div className="flex space-x-4">
@@ -25,7 +25,7 @@ export default function Footer() {
                 href="https://www.instagram.com/crystalsmile.dentalclinic?igsh=cmQ0Nmd3aG9nOHQx"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary-gold hover:opacity-80 transition-opacity"
+                className="text-brand-teal hover:opacity-80 transition-opacity"
               >
                 <RiInstagramLine className="w-6 h-6" />
               </motion.a>
@@ -34,7 +34,7 @@ export default function Footer() {
                 href="https://www.facebook.com/share/19VRjVe6CT/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary-gold hover:opacity-80 transition-opacity"
+                className="text-brand-teal hover:opacity-80 transition-opacity"
               >
                 <RiFacebookLine className="w-6 h-6" />
               </motion.a>
@@ -46,27 +46,27 @@ export default function Footer() {
             <h4 className="font-heading text-xl mb-4 text-white">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/services" className="font-ui text-sm text-white hover:text-primary-gold transition-colors">
+                <Link href="/services" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
                   Our Services
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="font-ui text-sm text-white hover:text-primary-gold transition-colors">
+                <Link href="/about" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="font-ui text-sm text-white hover:text-primary-gold transition-colors">
+                <Link href="/gallery" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
                   Smile Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="font-ui text-sm text-white hover:text-primary-gold transition-colors">
+                <Link href="/contact" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="/appointment" className="font-ui text-sm text-white hover:text-primary-gold transition-colors">
+                <Link href="/appointment" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
                   Book Appointment
                 </Link>
               </li>
@@ -78,20 +78,20 @@ export default function Footer() {
             <h4 className="font-heading text-xl mb-4 text-white">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-center space-x-3">
-                <RiMapPin2Line className="w-5 h-5 text-primary-gold" />
+                <RiMapPin2Line className="w-5 h-5 text-brand-teal" />
                 <span className="font-ui text-sm text-white">
                 Gateway Mall, Rehab City, Second New Cairo, Cairo Governorate 4750061
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <RiPhoneLine className="w-5 h-5 text-primary-gold" />
-                <a href="tel:+20 10 92797153" className="font-ui text-sm text-white hover:text-primary-gold transition-colors">
+                <RiPhoneLine className="w-5 h-5 text-brand-teal" />
+                <a href="tel:+20 10 92797153" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
                   010 92797153
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <RiMailLine className="w-5 h-5 text-primary-gold" />
-                <a href="mailto:info@crystalsmile.com" className="font-ui text-sm text-white hover:text-primary-gold transition-colors">
+                <RiMailLine className="w-5 h-5 text-brand-teal" />
+                <a href="mailto:info@crystalsmile.com" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
                   info@crystalsmile.com
                 </a>
               </li>
@@ -100,7 +100,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-primary-gold/20">
+        <div className="mt-12 pt-8 border-t border-brand-teal/20">
           <p className="text-center text-sm font-ui text-white">
             © {currentYear} Crystal Smile Dental Clinic. All rights reserved.
           </p>
@@ -109,7 +109,7 @@ export default function Footer() {
               href="https://dental-clinic-ivory.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-primary-gold hover:opacity-80 transition-opacity"
+              className="text-brand-teal hover:opacity-80 transition-opacity"
             >
             </a>
           </p>

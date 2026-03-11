@@ -154,7 +154,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-black text-white">
+      <section className="py-20 bg-brand-navy text-brand-mint">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -224,8 +224,7 @@ export default function Home() {
       <a 
         href="https://www.google.com/search?newwindow=1&sca_esv=eebed2998b575f61&sxsrf=ANbL-n4uz3DNquoyzkoz2ZbMwyrpODoaSQ:1767954661078&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOUM2cQUhTVfr8eD9q00kwMNVIumY9HcuLfbRlvmJEIKVdumgcvfdB-zQglAVR88kpNBf9fzQQZNP4OJVmnZkhM7WvCzWZbumRDB09c--eIAd1St_rn-8s5SsOqblAs2pumA1jeA%3D&q=Crystal+Smile+Rehab+Dental+Clinic+Reviews&sa=X&ved=2ahUKEwiJwrWsoP6RAxUqKvsDHX2HBNwQ0bkNegQIIRAE&biw=1280&bih=631&dpr=1.5&aic=0"
         target="_blank" 
-        className="inline-block px-8 py-3 bg-black text-white font-heading rounded-md hover:bg-primary-gold transition-colors"
-      >
+        className="inline-block px-8 py-3 bg-brand-teal text-white font-heading rounded-md hover:bg-brand-navy transition-colors"      >
         View More Google Reviews
       </a>
     </div>
@@ -233,7 +232,7 @@ export default function Home() {
 </section>
 
       {/* CTA Section */}
-      <section className="relative py-20 bg-black">
+      <section className="relative py-20 bg-brand-navy border-t border-brand-teal/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading text-4xl text-white mb-6">Ready to Transform Your Smile?</h2>
           <p className="font-body text-lg text-white mb-8 max-w-2xl mx-auto">

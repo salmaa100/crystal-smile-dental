@@ -30,7 +30,7 @@ export default function Navbar() {
 <Link href="/" className="flex items-center">
   <motion.div 
     whileHover={{ scale: 1.05 }}
-    className="relative h-12 w-40" // Adjust h (height) and w (width) to fit your logo's shape
+    className="relative h-16 w-56" // Increased height (h-16) and width (w-56)
   >
     <Image
       src="/assets/images/Logo_H.png" // The path to your logo file

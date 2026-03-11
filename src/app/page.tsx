@@ -12,7 +12,7 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/assets/images/hero-bg.jpg"
+            src="/assets/images/desk.jpg"
             alt="Luxury Dental Clinic"
             fill
             className="object-cover"
@@ -84,7 +84,7 @@ export default function Home() {
             </div>
             <div className="relative h-[600px]">
               <Image
-                src="/assets/images/welcome.jpg"
+                src="/assets/images/edited.jpg"
                 alt="Modern Dental Treatment Clinic in Cairo Rehab"
                 fill
                 className="object-cover rounded-lg"

@@ -10,18 +10,26 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Updated to your Clinic Brand Palette
+        brand: {
+          navy: '#1F3665',
+          teal: '#3297A8',
+          mint: '#A4D9D0',
+          sage: '#B7DDC9',
+        },
+        // Keep these but update the 'gold' to your 'teal' if you want a quick swap
         primary: {
-          DEFAULT: '#000000', // Black
-          gold: '#D4AF37', // Gold
-          white: '#FFFFFF', // White
+          DEFAULT: '#1F3665', // Changed from Black to Navy
+          gold: '#3297A8',    // Changed from Gold to Teal
+          white: '#FFFFFF',
         },
         background: {
-          light: '#FFFFFF',
-          dark: '#121212',
+          light: '#F8FAFB',   // Your new clean clinic background
+          dark: '#0D1629',
         },
         text: {
-          light: '#000000',
-          dark: '#FFFFFF',
+          light: '#1F3665',
+          dark: '#E5F4F1',
         },
       },
       fontFamily: {

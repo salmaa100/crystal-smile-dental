@@ -28,7 +28,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center">
             <motion.span 
               whileHover={{ scale: 1.02 }}
-              className="text-3xl font-heading font-normal text-black tracking-wide"
+              className="text-3xl font-heading font-normal text-brand-navy tracking-wide"
             >
               Crystal Smile
             </motion.span>
@@ -43,7 +43,7 @@ export default function Navbar() {
               >
                 <Link
                   href={link.href}
-                  className="font-ui text-sm text-black hover:text-primary-gold transition-all duration-300 tracking-wide"
+                  className="font-ui text-sm text-brand-navy hover:text-brand-teal transition-all duration-300 tracking-wide"
                 >
                   {link.label}
                 </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
             >
               <Link
                 href="/appointment"
-                className="font-ui text-sm px-6 py-3 bg-black text-white hover:bg-primary-gold transition-all duration-300 rounded-full tracking-wide"
+               className="font-ui text-sm px-6 py-3 bg-brand-teal text-white hover:bg-brand-navy transition-all duration-300 rounded-full tracking-wide"
               >
                 Book Appointment
               </Link>
@@ -94,7 +94,7 @@ export default function Navbar() {
             >
               <Link
                 href={link.href}
-                className="block py-4 font-ui text-sm text-black hover:text-primary-gold transition-all duration-300 tracking-wide"
+                className="block py-4 font-ui text-sm text-brand-navy hover:text-brand-teal transition-all duration-300 tracking-wide"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
@@ -107,7 +107,7 @@ export default function Navbar() {
           >
             <Link
               href="/appointment"
-              className="block w-full text-center font-ui text-sm px-6 py-3 bg-black text-white hover:bg-primary-gold transition-all duration-300 rounded-full tracking-wide"
+              className="block w-full text-center font-ui text-sm px-6 py-3 bg-brand-teal text-white hover:bg-brand-navy transition-all duration-300 rounded-full tracking-wide"
               onClick={() => setIsOpen(false)}
             >
               Book Appointment

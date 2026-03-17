@@ -7,11 +7,13 @@ import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiInstagramLine, RiFacebookLine
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  // Pulse animation variants for social icons
+  // Pulse animation variants: 
+  // We use scale and opacity to create a gentle "breathing" effect
   const pulseVariants = {
-    initial: { scale: 1 },
+    initial: { scale: 1, opacity: 1 },
     animate: {
-      scale: [1, 1.1, 1],
+      scale: [1, 1.15, 1],
+      opacity: [1, 0.8, 1],
       transition: {
         duration: 2,
         repeat: Infinity,
@@ -38,7 +40,7 @@ export default function Footer() {
                 variants={pulseVariants}
                 initial="initial"
                 animate="animate"
-                whileHover={{ y: -4, scale: 1.2 }}
+                whileHover={{ y: -4, scale: 1.2, opacity: 1 }}
                 href="https://www.instagram.com/crystalsmile.dentalclinic?igsh=cmQ0Nmd3aG9nOHQx"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -50,7 +52,7 @@ export default function Footer() {
                 variants={pulseVariants}
                 initial="initial"
                 animate="animate"
-                whileHover={{ y: -4, scale: 1.2 }}
+                whileHover={{ y: -4, scale: 1.2, opacity: 1 }}
                 href="https://www.facebook.com/share/19VRjVe6CT/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -86,7 +88,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                {/* Fixed WhatsApp Link for Mobile/Desktop Compatibility */}
                 <a 
                   href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment."
                   target="_blank"

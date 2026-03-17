@@ -62,7 +62,7 @@ export default function Navbar() {
               className="ml-4"
             >
               <Link
-                href="/appointment"
+                href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental!%20I'd%20like%20to%20book%20an%20appointment.%20(Patient:%20Adult%20/%20Child)"
                className="font-ui text-sm px-6 py-3 bg-brand-teal text-white hover:bg-brand-navy transition-all duration-300 rounded-full tracking-wide"
               >
                 Book Appointment

@@ -25,7 +25,7 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-screen flex items-center">
           <div className="max-w-2xl">
-            {/* <motion.h3
+            <motion.h3
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -33,7 +33,7 @@ export default function Home() {
             >
               Experience Luxury
               <span className="block">Dental Care</span>
-            </motion.h3> */}
+            </motion.h3> 
             
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,14 @@ export default function Home() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Link 
-                href="/appointment"
+                <a
+  href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block font-ui text-sm px-6 py-3 bg-brand-teal text-white hover:bg-brand-navy transition-all duration-300 rounded-full tracking-wide"
+>
+  Book Appointment
+</a>
                 className="inline-block bg-brand-teal hover:bg-white hover:text-brand-navy text-white font-ui text-sm tracking-wide px-8 py-4 rounded-full transition-all duration-300"
               >
                 Book Your Visit

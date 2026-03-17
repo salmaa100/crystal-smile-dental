@@ -7,10 +7,24 @@ import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiInstagramLine, RiFacebookLine
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
+  // Pulse animation variants for social icons
+  const pulseVariants = {
+    initial: { scale: 1 },
+    animate: {
+      scale: [1, 1.1, 1],
+      transition: {
+        duration: 2,
+        repeat: Infinity,
+        ease: "easeInOut"
+      }
+    }
+  };
+
   return (
     <footer className="bg-brand-navy">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          
           {/* Clinic Info */}
           <div className="space-y-4">
             <h3 className="font-heading text-2xl text-white">
@@ -21,20 +35,26 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <motion.a
-                whileHover={{ y: -2 }}
+                variants={pulseVariants}
+                initial="initial"
+                animate="animate"
+                whileHover={{ y: -4, scale: 1.2 }}
                 href="https://www.instagram.com/crystalsmile.dentalclinic?igsh=cmQ0Nmd3aG9nOHQx"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand-teal hover:opacity-80 transition-opacity"
+                className="text-brand-teal hover:text-white transition-colors"
               >
                 <RiInstagramLine className="w-6 h-6" />
               </motion.a>
               <motion.a
-                whileHover={{ y: -2 }}
+                variants={pulseVariants}
+                initial="initial"
+                animate="animate"
+                whileHover={{ y: -4, scale: 1.2 }}
                 href="https://www.facebook.com/share/19VRjVe6CT/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand-teal hover:opacity-80 transition-opacity"
+                className="text-brand-teal hover:text-white transition-colors"
               >
                 <RiFacebookLine className="w-6 h-6" />
               </motion.a>
@@ -66,9 +86,15 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/appointment" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
+                {/* Fixed WhatsApp Link for Mobile/Desktop Compatibility */}
+                <a 
+                  href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-ui text-sm text-white hover:text-brand-teal transition-colors"
+                >
                   Book Appointment
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -77,20 +103,25 @@ export default function Footer() {
           <div>
             <h4 className="font-heading text-xl mb-4 text-white">Contact Us</h4>
             <ul className="space-y-4">
-              <li className="flex items-center space-x-3">
-                <RiMapPin2Line className="w-5 h-5 text-brand-teal" />
-                <span className="font-ui text-sm text-white">
-                Gateway Mall, Rehab City, Second New Cairo, Cairo Governorate 4750061
-                </span>
+              <li className="flex items-start space-x-3">
+                <RiMapPin2Line className="w-5 h-5 text-brand-teal mt-1 shrink-0" />
+                <a 
+                  href="https://share.google/q6aAKkqsbjbkibpEO" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-ui text-sm text-white hover:text-brand-teal transition-colors leading-relaxed"
+                >
+                  Gateway Mall, Rehab City, Second New Cairo, Cairo Governorate 4750061
+                </a>
               </li>
               <li className="flex items-center space-x-3">
-                <RiPhoneLine className="w-5 h-5 text-brand-teal" />
-                <a href="tel:+20 10 92797153" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
+                <RiPhoneLine className="w-5 h-5 text-brand-teal shrink-0" />
+                <a href="tel:+201092797153" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
                   010 92797153
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <RiMailLine className="w-5 h-5 text-brand-teal" />
+                <RiMailLine className="w-5 h-5 text-brand-teal shrink-0" />
                 <a href="mailto:info@crystalsmile.com" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
                   info@crystalsmile.com
                 </a>
@@ -104,17 +135,8 @@ export default function Footer() {
           <p className="text-center text-sm font-ui text-white">
             © {currentYear} Crystal Smile Dental Clinic. All rights reserved.
           </p>
-          <p className="text-center text-sm font-ui text-white/80 mt-1">
-            <a 
-              href="https://dental-clinic-ivory.vercel.app/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-brand-teal hover:opacity-80 transition-opacity"
-            >
-            </a>
-          </p>
         </div>
       </div>
     </footer>
   );
-} 
+}

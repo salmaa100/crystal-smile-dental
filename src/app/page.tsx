@@ -50,24 +50,21 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-                <a
+               <a
   href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment."
   target="_blank"
   rel="noopener noreferrer"
-  className="inline-block font-ui text-sm px-6 py-3 bg-brand-teal text-white hover:bg-brand-navy transition-all duration-300 rounded-full tracking-wide"
+  className="inline-block bg-brand-teal hover:bg-white hover:text-brand-navy text-white font-ui text-sm tracking-wide px-8 py-4 rounded-full transition-all duration-300"
 >
-  Book Appointment
+  Book Your Visit
 </a>
-                className="inline-block bg-brand-teal hover:bg-white hover:text-brand-navy text-white font-ui text-sm tracking-wide px-8 py-4 rounded-full transition-all duration-300"
-              >
-                Book Your Visit
-              </Link>
-              <Link 
-                href="/services"
-                className="inline-block bg-white/10 backdrop-blur-sm border border-white text-white hover:bg-white hover:text-brand-navy font-ui text-sm tracking-wide px-8 py-4 rounded-full transition-all duration-300"
-              >
-                Explore Services
-              </Link>
+
+<Link 
+  href="/services"
+  className="inline-block bg-white/10 backdrop-blur-sm border border-white text-white hover:bg-white hover:text-brand-navy font-ui text-sm tracking-wide px-8 py-4 rounded-full transition-all duration-300"
+>
+  Explore Services
+</Link>
             </motion.div>
           </div>
         </div>

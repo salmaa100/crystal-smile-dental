@@ -62,11 +62,14 @@ export default function Navbar() {
               className="ml-4"
             >
               <Link
-                href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental!%20I'd%20like%20to%20book%20an%20appointment.%20(Patient:%20Adult%20/%20Child)"
-               className="font-ui text-sm px-6 py-3 bg-brand-teal text-white hover:bg-brand-navy transition-all duration-300 rounded-full tracking-wide"
-              >
-                Book Appointment
-              </Link>
+               <a
+  href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block font-ui text-sm px-6 py-3 bg-brand-teal text-white hover:bg-brand-navy transition-all duration-300 rounded-full tracking-wide"
+>
+  Book Appointment
+</a>
             </motion.div>
           </div>
 

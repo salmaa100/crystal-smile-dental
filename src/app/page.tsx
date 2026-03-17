@@ -50,7 +50,6 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Link 
                 <a
   href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment."
   target="_blank"

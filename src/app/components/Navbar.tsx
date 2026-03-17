@@ -14,6 +14,9 @@ const navLinks = [
   { href: '/contact', label: 'Contact' },
 ];
 
+// Reusable WhatsApp Link logic
+const whatsappUrl = "https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment.";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -26,21 +29,20 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           {/* Logo */}
-          {/* Logo */}
-<Link href="/" className="flex items-center">
-  <motion.div 
-    whileHover={{ scale: 1.05 }}
-    className="relative h-16 w-56" // Increased height (h-16) and width (w-56)
-  >
-    <Image
-      src="/assets/images/Logo_H.png" // The path to your logo file
-      alt="Crystal Smile Dental Clinic"
-      fill
-      className="object-contain"
-      priority
-    />
-  </motion.div>
-</Link>
+          <Link href="/" className="flex items-center">
+            <motion.div 
+              whileHover={{ scale: 1.05 }}
+              className="relative h-16 w-56"
+            >
+              <Image
+                src="/assets/images/Logo_H.png"
+                alt="Crystal Smile Dental Clinic"
+                fill
+                className="object-contain"
+                priority
+              />
+            </motion.div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-10">
@@ -61,14 +63,14 @@ export default function Navbar() {
               whileHover={{ scale: 1.05 }}
               className="ml-4"
             >
-             <a
-  href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-block font-ui text-sm px-6 py-3 bg-brand-teal text-white hover:bg-brand-navy transition-all duration-300 rounded-full tracking-wide"
->
-  Book Appointment
-</a>
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block font-ui text-sm px-6 py-3 bg-brand-teal text-white hover:bg-brand-navy transition-all duration-300 rounded-full tracking-wide"
+              >
+                Book Appointment
+              </a>
             </motion.div>
           </div>
 
@@ -115,16 +117,19 @@ export default function Navbar() {
             whileHover={{ scale: 1.02 }}
             className="mt-4"
           >
-            <Link
-              href="/appointment"
+            {/* Fixed for Mobile: Replaced <Link> with <a> */}
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="block w-full text-center font-ui text-sm px-6 py-3 bg-brand-teal text-white hover:bg-brand-navy transition-all duration-300 rounded-full tracking-wide"
               onClick={() => setIsOpen(false)}
             >
               Book Appointment
-            </Link>
+            </a>
           </motion.div>
         </div>
       </motion.div>
     </motion.nav>
   );
-} 
+}

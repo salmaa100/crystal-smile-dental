@@ -61,8 +61,7 @@ export default function Navbar() {
               whileHover={{ scale: 1.05 }}
               className="ml-4"
             >
-              <Link
-               <a
+             <a
   href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment."
   target="_blank"
   rel="noopener noreferrer"

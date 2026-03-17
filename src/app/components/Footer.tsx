@@ -7,6 +7,7 @@ import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiInstagramLine, RiFacebookLine
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
+  // Unified Pulse Animation for all icons
   const pulseVariants = {
     initial: { scale: 1, opacity: 1 },
     animate: {
@@ -86,11 +87,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                {/* FIXED WHATSAPP LINK */}
                 <a 
                   href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental%2C%20I%20would%20like%20to%20book%20a%20consultation."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-ui text-sm text-white hover:text-brand-teal transition-colors"
+                  className="font-ui text-sm text-white hover:text-brand-teal transition-colors cursor-pointer"
                 >
                   Book Your Consultation
                 </a>
@@ -101,9 +103,12 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="font-heading text-xl mb-4 text-white">Contact Us</h4>
-            <ul className="space-y-4">
+            <ul className="space-y-6">
               <li className="flex items-start space-x-3">
-                <RiMapPin2Line className="w-5 h-5 text-brand-teal mt-1 shrink-0" />
+                {/* Pulsing Map Icon */}
+                <motion.div variants={pulseVariants} initial="initial" animate="animate">
+                  <RiMapPin2Line className="w-6 h-6 text-brand-teal mt-1 shrink-0" />
+                </motion.div>
                 <a 
                   href="https://share.google/q6aAKkqsbjbkibpEO" 
                   target="_blank" 
@@ -114,13 +119,16 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <RiPhoneLine className="w-5 h-5 text-brand-teal shrink-0" />
+                {/* Pulsing Phone Icon */}
+                <motion.div variants={pulseVariants} initial="initial" animate="animate">
+                  <RiPhoneLine className="w-6 h-6 text-brand-teal shrink-0" />
+                </motion.div>
                 <a href="tel:+201092797153" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
                   010 92797153
                 </a>
               </li>
               <li className="flex items-center space-x-3">
-                <RiMailLine className="w-5 h-5 text-brand-teal shrink-0" />
+                <RiMailLine className="w-6 h-6 text-brand-teal shrink-0" />
                 <a href="mailto:info@crystalsmile.com" className="font-ui text-sm text-white hover:text-brand-teal transition-colors">
                   info@crystalsmile.com
                 </a>

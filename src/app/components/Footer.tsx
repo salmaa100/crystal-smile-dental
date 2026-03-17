@@ -7,8 +7,6 @@ import { RiMapPin2Line, RiPhoneLine, RiMailLine, RiInstagramLine, RiFacebookLine
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  // Pulse animation variants: 
-  // We use scale and opacity to create a gentle "breathing" effect
   const pulseVariants = {
     initial: { scale: 1, opacity: 1 },
     animate: {
@@ -89,12 +87,12 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                  href="https://wa.me/201092797153?text=Hello%20Crystal%20Smile%20Dental%2C%20I%20would%20like%20to%20book%20a%20consultation."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-ui text-sm text-white hover:text-brand-teal transition-colors"
                 >
-                  Book Appointment
+                  Book Your Consultation
                 </a>
               </li>
             </ul>

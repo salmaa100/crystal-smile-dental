@@ -25,7 +25,7 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-screen flex items-center">
           <div className="max-w-2xl">
-            <motion.h1 
+            <motion.h3
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -33,7 +33,7 @@ export default function Home() {
             >
               Experience Luxury
               <span className="block">Dental Care</span>
-            </motion.h1>
+            </motion.h3>
             
             <motion.p 
               initial={{ opacity: 0, y: 20 }}

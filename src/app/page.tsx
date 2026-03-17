@@ -41,7 +41,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-body text-lg sm:text-xl text-white mb-8 leading-relaxed"
             >
-              Where artistry meets dentistry. Discover a new standard of dental excellence in Rehab Gateway Mall.
+              Discover a new standard of dental excellence in Rehab Gateway Mall.
             </motion.p>
 
             <motion.div 

@@ -25,7 +25,7 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-screen flex items-center">
           <div className="max-w-2xl">
-            <motion.h3
+            {/* <motion.h3
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -33,16 +33,18 @@ export default function Home() {
             >
               Experience Luxury
               <span className="block">Dental Care</span>
-            </motion.h3> 
+            </motion.h3>  */}
             
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-body text-lg sm:text-xl text-white mb-8 leading-relaxed"
-            >
-              Discover a new standard of dental excellence in Rehab Gateway Mall.
-            </motion.p>
+            <motion.h5
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.2 }}
+  className="font-body text-lg sm:text-xl text-white mb-8 leading-relaxed"
+>
+  Experience Luxurious Dental Care. 
+  <br className="hidden sm:block" /> {/* Line break only on tablet/desktop */}
+  {" "}Discover a new standard of dental excellence in Rehab Gateway Mall.
+</motion.h5>
 
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
